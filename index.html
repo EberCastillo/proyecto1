@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Pasaporte</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-color: #fff;
+		} 
+		header{
+			background-color: #68A162;
+			text-align: center;
+			font-family: arial black;
+			height: 80px;
+			width: 100%; 
+			color: #F5C227;}
+		ul, ol{
+			list-style: none;
+		}
+		.nav{
+			width: 500px;
+			margin: auto;
+		}
+		.nav > li{
+			float: left;
+		}
+		.nav li a{
+			background-color: #000;
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 12px;
+			display: block;
+		}
+		.nav li a:hover{
+			background-color: #434343;
+		}
+		.nav li ul{
+			display: none;
+			position: absolute;
+			min-width: 140px;
+			text-align: left;
+		}
+		.nav li:hover > ul{
+			display: block;
+		}
+		.nav li ul li {
+			position: relative;
+		}
+		.nav li ul li ul{
+			right: -140px;
+			top: 0px;
+		}
+		nav{
+			border: 1px solid black;
+			background-color: #000;
+			text-align: center;
+			font-family: arial black;
+			height: 42px;
+			width: 100%;
+			
+		}
+		main{
+			text-align: center;
+			font-family: arial black;
+			min-height: calc(100vh - 100px);
+			width: 100%;
+			margin-bottom: 10px;
+			display: flex;
+		}
+		article{
+			margin: 15px;
+			border-radius: 20px;
+			background-color: #173017;
+			text-align: center;
+			font-family: arial black;
+			min-height: 100%;
+			width: 80%;
+			margin-bottom: 10px;
+		}
+		section{
+			border-radius: 20px;
+			background-color: lightgreen;
+			text-align: justify;
+			font-family: arial;
+			padding: 20px;
+			width: 90%;
+			margin-bottom: 10px;
+			margin: 20px;
+ 			margin-top: 20px;
+		}
+		aside{
+			border-radius: 10px;
+			text-align: left;
+			font-family: arial black;
+			min-height: 100%;
+			width: 18%;
+			margin-bottom: 10px;
+			margin-left: 15px;
+			padding-top: 10px;
+			padding-left: 15px;
+			position: fixed;
+			right: 0;
+		}
+		footer{
+			background-color: #22532A;
+			text-align: center;
+			font-family: arial black;
+			min-height: 50px;
+			width: 100%;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			color: #F5C227;
+			text-shadow: 2px 2px 2px gray;
+		}
+		img{
+			height: 200px;
+			border-radius: 5px;
+			box-shadow: gray 5px 5px 10px;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+			padding-left: 20px;
+		}
+		/* -------------------- */
+/* ESTILOS RESPONSIVOS  */
+/* -------------------- */
+
+@media (max-width: 1024px) {
+	.nav {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.nav > li {
+		float: none;
+	}
+	.nav li a {
+		padding: 10px;
+		font-size: 14px;
+	}
+	main {
+		flex-direction: column;
+	}
+	article {
+		width: 95%;
+	}
+	aside {
+		position: relative;
+		width: 95%;
+		margin: 15px auto;
+	}
+}
+
+@media (max-width: 768px) {
+	header {
+		height: auto;
+		padding: 10px;
+	}
+	header h2 {
+		font-size: 20px;
+	}
+	.nav li a {
+		font-size: 13px;
+		padding: 8px;
+	}
+	section {
+		padding: 15px;
+		margin: 10px;
+		width: auto;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-width: 480px) {
+	nav {
+		height: auto;
+	}
+	.nav {
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav > li {
+		width: 100%;
+		text-align: center;
+	}
+	article, aside {
+		width: 100%;
+		margin: 10px 0;
+	}
+	aside {
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+	footer {
+		padding: 20px 10px;
+	}
+}
+
+	</style>
+</head>
+<body>
+	<header><h2>MI PASAPORTE AL ÉXITO LCM</h2>
+		Bachillerato en Computación con Orientación Cientifica
+	<nav>
+		 <ul class="nav">
+		 	<li><a href="#nuevo">Inicio</a></li>
+		 	<li><a href="#ini">Sobre la carrera</a></li>
+		 	<li><a href="">Cursos</a>
+		 		<ul>
+		 			<li><a href="#ef">Educación Física</a></li>
+		 			<li><a href="#it">Inglés Técnico</a></li>
+		 			<li><a href="#ic">Computación/Instalación</a></li>
+		 			<li><a href="#cl">Comunicación</a></li>
+		 			<li><a href="#ff">Física</a></li>
+		 			<li><a href="#ma">Matemática</a></li>
+		 			<li><a href="#cg">Contabilidad</a></li>
+		 			<li><a href="#es">Estudios Sociales</a></li>
+		 			<li><a href="#pr">Programación</a></li>
+		 			<li><a href="#ee">Estadística</a></li>
+		 		</ul></li>
+		 	<li><a href="#con">Logo</a></li>
+		 </ul>
+	</nav>
+	</header>
+	
+	<main>
+		<article>
+			<section id="ini">
+				<h1 id="sn">SOBRE LA CARRERA</h1>
+				<h2 id="mis">Bachillerato en Computación con Orientación Científica</h2>
+				<p>La carrera de Bachillerato en Computación con Orientación Científica prepara a los estudiantes con conocimientos sólidos en matemáticas, física y computación, para desarrollar habilidades en programación, análisis y resolución de problemas tecnológicos, preparándolos para estudios universitarios en ingeniería o campos científicos, y el mercado laboral. Incluye materias como lógica matemática, programación, física, química e inglés, enfocándose en el pensamiento crítico y la aplicación tecnológica. </p>
+				<center><img src="https://practicasupervisadacercado.wordpress.com/wp-content/uploads/2021/09/bachillerato-orientacion-comercial-1.jpg?w=500"></center>
+			</section>
+			<section id="pro">
+				<h1 id="car">CURSOS</h1>
+				<hr><br>
+				<h2 id="ef">Educación Física</h2>
+				<p>Educación física trata sobre desarrollar las capacidades físicas, afectivas y cognitivas de las personas a través del movimiento corporal, promoviendo la adopción de un estilo de vida activo y saludable, el conocimiento y respeto del propio cuerpo, y el desarrollo de habilidades como el trabajo en equipo, la empatía y la inclusión. </p><br>
+				<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1bISL4koh60K3Jm2X08gQ7xxdsLJrPob_Lg&s"></center><br>
+				<hr><br>
+				<h2 id="it">Inglés Técnico</h2>
+				<p>Inglés técnico se enfoca en enseñar vocabulario, expresiones y estructuras gramaticales específicas de un campo profesional o sector concreto, como la ingeniería, la medicina o la informática. Su objetivo principal es dotar a los estudiantes de la capacidad para comprender y comunicarse con precisión en su área, leyendo documentos, manuales y reportes, y colaborando en proyectos internacionales. </p><br>
+				<center><img src="https://bessysitiodeinformatica.wordpress.com/wp-content/uploads/2018/07/in1.jpg?w=482&h=241"></center><br>
+				<hr><br>
+				<h2 id="ci">Comptuación/Instalación de Software</h2>
+				<p>Computación enseña sobre el uso y funcionamiento de las computadoras, cubriendo tanto el hardware (componentes físicos como CPU, teclado, memoria) como el software (programas, aplicaciones y el sistema operativo). Los cursos básicos suelen incluir tareas como aprender a usar el escritorio de Windows, manejar archivos y carpetas, navegar por Internet y usar el correo electrónico, mientras que los cursos más avanzados pueden enfocarse en programación, pensamiento computacional, ciberseguridad e inteligencia artificial. </p><br>
+				<center><img src="https://computacion.dc.uba.ar/wp-content/uploads/2022/04/icono-inicio-computacion.DC_.svg"></center><br>
+				<hr><br>
+				<h2 id="cl">Comunicación y Literatura</h2>
+				<p>Comunicación y Literatura desarrolla competencias lingüísticas y comunicativas para que los estudiantes comprendan y se expresen oral y escritamente en diversos contextos, aplicando el idioma de manera efectiva. Se enfoca en el análisis del lenguaje, la lectura, la escritura, la expresión oral, y el uso de tecnologías para la comunicación, preparando a los individuos para interactuar, enseñar y analizar información de forma crítica. </p><br>
+				<center><img src="https://edea.juntadeandalucia.es/bancorecursos/file/fe4138ff-3afd-4edc-b380-02c373207bad/1/es-an_2020061012_9121707.zip/Libros3.jpg"></center><br>
+				<hr><br>
+				<h2 id="ff">Física Fundamental</h2>
+				<p> Física Fundamental introduce los principios y leyes básicas del universo, cubriendo áreas como la mecánica clásica, el electromagnetismo y la termodinámica, con el fin de desarrollar el pensamiento científico y la resolución de problemas en diversas aplicaciones tecnológicas. </p><br>
+				<center><img src="https://tomi-digital-resources.storage.googleapis.com/images/classes/lessons/lsn-48101-5f304750111b2.jpeg"></center><br>
+				<hr><br>
+				<h2 id="ma">Matemática</h2>
+				<p>Matemáticas es un programa de estudios diseñado para aprender los conceptos, operaciones y métodos lógicos de esta ciencia, que se dedica al estudio de los números, figuras, cantidades, y sus propiedades y relaciones. Estos cursos buscan mejorar la comprensión de nociones teóricas y prácticas para resolver problemas, y pueden abarcar temas como aritmética, álgebra, geometría, cálculo, o estadística, dependiendo del nivel. </p><br>
+				<center><img src="https://static.vecteezy.com/system/resources/previews/005/449/876/non_2x/mathematics-doodle-hand-drawn-school-set-vector.jpg"></center><br>
+				<hr><br>
+				<h2 id="cg">Contabilidad</h2>
+				<p>Contabilidad enseña a registrar, analizar y reportar las transacciones financieras de una empresa para crear información que ayude a la toma de decisiones, la planificación y el cumplimiento de obligaciones fiscales. Estos cursos cubren desde los conceptos básicos, como el plan de cuentas y los estados financieros (balance general, estado de resultados), hasta el uso de herramientas digitales como Excel y software contable. </p><br>
+				<center><img src="https://icei-formacion.com/wp-content/uploads/2019/11/3170-scaled.jpg"></center><br>
+				<hr><br>
+				<h2 id="es">Estudios Sociales</h2>
+				<p>Estudios Sociales es un estudio interdisciplinario del ser humano, la sociedad, la historia y la geografía, con el objetivo principal de formar ciudadanos informados, críticos y participativos capaces de comprender y mejorar su comunidad en un mundo interconectado. Estos cursos integran conocimientos de diversas materias para analizar el comportamiento humano, los procesos sociales, económicos y políticos, y preparan a los estudiantes para asumir un rol activo en una sociedad democrática y diversa. </p><br>
+				<center><img src="https://media.istockphoto.com/id/1132078522/es/foto/globo-de-cristal-del-mundo-en-bosquejo-del-esquema-del-mapa-del-mundo-en-la-p%C3%A1gina-de-papel.jpg?s=612x612&w=0&k=20&c=bmvF3AmGRsWJPru0KepVFUc85P-y5hQfYXDHBVABP8k="></center><br>
+				<hr><br>
+				<h2 id="pr">Programación</h2>
+				<p>Programación nos enseña a desarrollar software y aplicaciones mediante la escritura de código en lenguajes de programación, aplicando lógica y resolución de problemas para crear instrucciones que las computadoras pueden ejecutar. Estos cursos buscan enseñar una forma de pensamiento estructurada, con el objetivo de formar a los estudiantes para analizar, diseñar y mantener aplicaciones de software para diversas áreas como desarrollo web, móvil, tratamiento de datos y más. </p><br>
+				<center><img src="https://ceutec.hn/wp-content/uploads/2024/07/cuales-son-lenguajes-programacion-1024x576.png"></center><br>
+				<hr><br>
+				<h2 id="ee">Estadística</h2>
+				<p>Estadística enseña a los estudiantes a recopilar, organizar, analizar e interpretar datos para tomar decisiones informadas, utilizando herramientas como tablas de frecuencias, gráficos, y conceptos como la media, mediana y moda. Se cubren dos ramas principales: la estadística descriptiva>>, que resume las características de un conjunto de datos, y la estadística inferencial>>, que permite generalizar conclusiones sobre una población a partir de una muestra. </p><br>
+				<center><img src="https://s1.significados.com/foto/estadistica-como-herramienta-de-analisis.jpg?class=article"></center><br>
+			</section>
+			<section id="con">
+				<h1 id="jor">LOGO LCM</h1>
+				<ul>
+					<li><center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGOsSKSsuDXdO1cPNmQYA-7-UZ9FDbLCesMA&s"> </center> </li>
+				</ul>
+			</section>
+		</article>
+		<aside>
+			<center>
+			<h6 class="barral">Contenido Relacionado</h6>
+			<hr><br>
+			<h4>Liceo Compu-Market</h4></center>
+			<br><br>
+			<ol>
+				<li><a href="https://www.waze.com/es-419/live-map/directions/liceo-compu-market-4a-avenida-29-villa-nueva?to=place.w.176554129.1765606829.10178819" target="blank">Ubicación</a> </li>
+				<li><a href="https://liceocompumarket.wordpress.com/about/" target="blank">Hitoria</a> </li>
+				<li><a href="https://www.facebook.com/LiceoCM/?locale=es_LA" target="blank">Facebook</a> </li>
+			</ol>
+		</aside>
+	</main>
+	<footer>
+		<div class="piepag">
+			<h1>LICEO COMPU-MARKET</h1>
+			<h2>4A. Avenida 6-29 Z.1, VILLA NUEVA, Guatemala </h2>
+			<h3>Teléfono: 6636 0705</h3>
+			<h3>Tu Pasaporte al Éxito</h3>
+		</div>
+	</footer>
+</body>
+</html>
